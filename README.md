@@ -1,4 +1,4 @@
 # si618-exercise-mrjob
 
-##running the file
-$python3 part1.py input.txt -o ./output
+## running the file
+<br> python3 part1.py input.txt -o ./output
