@@ -1,14 +1,8 @@
 import mrjob
 from mrjob.job import MRJob
 import re
-import os
-import inspect
 
-module_path = inspect.getfile(inspect.currentframe())
-module_dir = os.path.realpath(os.path.dirname(module_path))
-os.chdir(module_dir)
 WORD_RE = re.compile(r"[\w']+")
-
 
 class MRMostUsedWord(MRJob):
     def mapper(self, _, line):
